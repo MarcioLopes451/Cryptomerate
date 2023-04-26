@@ -1,10 +1,12 @@
+/* Navbar Section */
+
 .nav {
   background: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  height: 70px;
+  height:70px;
 }
 .navlinks {
   display: flex;
@@ -35,4 +37,56 @@
 .logo{
   width: 80px;
   cursor: pointer;
+}
+/* Banner Section */
+.banners {
+  margin-top: 0%;
+}
+.bannerImg {
+  height: 500px;
+  background-size: cover;
+  transition: 1s ease;
+}
+.icons1 {
+  position: absolute;
+  top: 50%;
+  transform: translateX(0);
+  transform: translateY(-100px);
+  left: 5%;
+  cursor: pointer;
+  color: #ffffff;
+  background: #6d6d6d;
+  border-radius: 1rem;
+  
+}
+.icons2 {
+  position: absolute;
+  top: 50%;
+  transform: translateX(0);
+  transform: translateY(-100px);
+  right: 5%;
+  cursor: pointer;
+  color: #ffffff;
+  background: #6d6d6d;
+  border-radius: 1rem;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  padding-top: 30rem;
+}
+.dotsOnClick {
+  cursor: pointer;
+}
+.imgText {
+  position: absolute;
+  top: 40%;
+  transform: translateX(0);
+  transform: translateY(-100px);
+  left: 10%;
+  cursor: pointer;
+  color: #ffffff;
+ width: 40%;
+ animation-delay: 4s;
 }
