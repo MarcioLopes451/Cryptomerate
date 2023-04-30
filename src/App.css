@@ -45,7 +45,7 @@
 .bannerImg {
   height: 500px;
   background-size: cover;
-  transition: 1s ease;
+  transition: 1s ease-in;
 }
 .icons1 {
   position: absolute;
@@ -82,11 +82,11 @@
 .imgText {
   position: absolute;
   top: 40%;
-  transform: translateX(0);
-  transform: translateY(-100px);
   left: 10%;
-  cursor: pointer;
-  color: #ffffff;
+  z-index: 1;
+  color: white;
+  font-size: 2rem;
  width: 40%;
- animation-delay: 4s;
+ transform: translateX(0);
+ transform: translateY(-100px);
 }
