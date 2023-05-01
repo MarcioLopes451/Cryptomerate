@@ -1,5 +1,6 @@
 import Navbar from "./Components/Home/Navbar";
 import Banner from "./Components/Home/Banner";
+import PopularCrypto from "./Components/Home/PopularCrypto";
 import './App.css'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
     <Navbar />
     <Banner />
+    <PopularCrypto />
     </div>
   );
 }

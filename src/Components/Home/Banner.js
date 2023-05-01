@@ -11,23 +11,46 @@ const slides = [
     {
         image: 'https://pixelplex.io/wp-content/uploads/2019/07/work-cryptocurrency-mobile-wallet-for-android-and-ios-1920.jpg',
         text: 'On the go. Use the app on portable devices'
+    },
+    {
+        image: 'https://wp-blog-assets.coingate.com/2022/06/c5b18b5e-howtoswap_blog-1024x530.png',
+        text: 'The latest technologies will have you ahead of others.'
     }
 ];
 
 export default function Banner() {
     
   return (
-    <Slider classname='Slider'>
+    <div>
+    <Slider classname='slider'>
         {slides.map((item, index) => (
             <div 
             key={index} 
             className='slider-content'
-            style={{background: `url('${item.image}') no-repeat center center`}}>
+            style={{background: `url('${item.image}') no-repeat center center`, height:'700px'}}>
                 <div className='content'>
                     <h1>{item.text}</h1>
                 </div>
             </div>
         ))}
     </Slider>
+    <div className='home1'>
+        <h1>Cryptocurrency is for the future - Buy, trade & Hold 300+ cryptocurrencies on Cryptomerate</h1>
+        <ul className='numbers'>
+            <li>
+                <p className='numbers2'>150</p>
+                <p>Countries</p>
+            </li>
+            <li>
+                <p className='numbers2'>10+</p>
+                <p>Million Users</p>
+            </li>
+            <li>
+                <p className='numbers2'>300+</p>
+                <p>Cryptocurrencies</p>
+            </li>
+        </ul>
+    </div>
+    </div>
   )
 }
