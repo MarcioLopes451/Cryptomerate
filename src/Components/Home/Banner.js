@@ -1,62 +1,33 @@
-import React, {useState} from 'react';
-import { BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
-import { RxDotFilled } from 'react-icons/rx';
+import React from 'react';
+import Slider from 'react-animated-slider';
+import "react-animated-slider/build/horizontal.css";
+import "normalize.css/normalize.css";
+
+const slides = [
+    {
+        image: 'https://cdn.corporatefinanceinstitute.com/assets/cryptocurrency.jpg',
+        text: 'Get all the latest updates on the crypto market'
+    },
+    {
+        image: 'https://pixelplex.io/wp-content/uploads/2019/07/work-cryptocurrency-mobile-wallet-for-android-and-ios-1920.jpg',
+        text: 'On the go. Use the app on portable devices'
+    }
+];
 
 export default function Banner() {
-    const slides = [
-        {
-            url: 'https://cdn.corporatefinanceinstitute.com/assets/cryptocurrency.jpg',
-            text: 'Get all the latest updates on the crypto market'
-        },
-        {
-            url: 'https://pixelplex.io/wp-content/uploads/2019/07/work-cryptocurrency-mobile-wallet-for-android-and-ios-1920.jpg',
-            text: 'On the go. Use the app on portable devices'
-        }
-    ];
-
-    const [currentInd, setCurrentInd] = useState(0);
-
-    const prevSlide = () =>{
-        const firstSlide = currentInd === 0;
-        const newSlide = firstSlide ? slides.length - 1 : currentInd - 1;
-        setCurrentInd(newSlide);
-    }
-
-    const nextSlide = () => {
-        const lastSlide = currentInd === slides.length - 1;
-        const newSlide = lastSlide ? 0 : currentInd + 1;
-        setCurrentInd(newSlide)
-    }
-
-    const goToSlide = (slideInd) => {
-        setCurrentInd(slideInd);
-    }
-
+    
   return (
-    <div className='banners'>
-    <div className='bannerImg'
-    style={{backgroundImage: `url(${slides[currentInd].url})`}}>
-        <div className='dots'>
-        {slides.map((slide, slideInd) => (
-            <div key={slideInd} 
-            onClick={() => goToSlide(slideInd)} 
-            className='dotsOnClick'>
-                <RxDotFilled />
+    <Slider classname='Slider'>
+        {slides.map((item, index) => (
+            <div 
+            key={index} 
+            className='slider-content'
+            style={{background: `url('${item.image}') no-repeat center center`}}>
+                <div className='content'>
+                    <h1>{item.text}</h1>
+                </div>
             </div>
         ))}
-    </div>
-    <h1 className='imgText' style={{transition: '2s ease'}}>{slides[currentInd].text}</h1>
-    </div>
-    <div className='icons1'>
-    <BsChevronCompactLeft
-     size={30}
-     onClick={prevSlide}/>
-    </div>
-    <div className='icons2'>
-    <BsChevronCompactRight 
-    size={30}
-    onClick={nextSlide}/>
-    </div>
-    </div>
+    </Slider>
   )
 }
