@@ -28,7 +28,7 @@ export default function PopularCrypto() {
                 <th>Market Cap</th>
             </tr>
             <tr>
-                <td>
+                <td className='cryptoName'>
                   <img src={data[0].image} alt=''/>
                   <h3>{data[0].id}</h3>
                   <p>{data[0].symbol}</p>
@@ -48,7 +48,7 @@ export default function PopularCrypto() {
                 </td>
             </tr>
             <tr>
-            <td>
+            <td className='cryptoName'>
                   <img src={data[1].image} alt=''/>
                   <h3>{data[1].id}</h3>
                   <p>{data[1].symbol}</p>
@@ -68,7 +68,7 @@ export default function PopularCrypto() {
                 </td> 
             </tr>
             <tr>
-            <td>
+            <td className='cryptoName'>
                   <img src={data[2].image} alt=''/>
                   <h3>{data[2].id}</h3>
                   <p>{data[2].symbol}</p>
@@ -88,7 +88,7 @@ export default function PopularCrypto() {
                 </td>
             </tr>
             <tr>
-            <td>
+            <td className='cryptoName'>
                   <img src={data[3].image} alt=''/>
                   <h3>{data[3].id}</h3>
                   <p>{data[3].symbol}</p>
@@ -108,7 +108,7 @@ export default function PopularCrypto() {
                 </td>
             </tr>
             <tr>
-            <td>
+            <td className='cryptoName'>
                   <img src={data[4].image} alt=''/>
                   <h3>{data[4].id}</h3>
                   <p>{data[4].symbol}</p>

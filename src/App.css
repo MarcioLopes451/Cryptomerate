@@ -92,9 +92,24 @@
 .cryptoTable {
   width: 100%;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 .cryptoTable img {
-  width: 70px;
+  width: 60px;
+  height: 40px;
 }
 
+.cryptoTable tr {
+  display: flex;
+  justify-content: space-between;
+}
+.cryptoTable tr:hover{
+  background-color: #f3f3f3;
+}
+.cryptoName {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 1%;
+}
