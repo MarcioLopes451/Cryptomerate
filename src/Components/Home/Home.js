@@ -14,12 +14,12 @@ export default function Home() {
         <div className='trade'>
         <h3>Trade on the go, Anywhere, anytime</h3>
         <p>Stay updated with our app & desktop client.</p>
-        <img src={mobileImg} alt='mobile' />
+       
         </div>
         <div className='support'>
             <h1>Hello</h1>
         </div>
-    </div>
+  </div> 
     </>
   )
 }

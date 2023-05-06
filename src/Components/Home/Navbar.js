@@ -4,7 +4,8 @@ import Logo from '../../images/cryptomerate-low-resolution-logo-color-on-transpa
 
 export default function Navbar() {
   return (
-    <nav className='nav'>
+  <>
+   <nav className='nav'>
         <img src={Logo} alt='logo' className='logo'/>
         <div className='navlinks'>
             <a href='/'>Home</a>
@@ -15,6 +16,7 @@ export default function Navbar() {
             <button className='loginBTN'>Login/Register</button>
             <ReactSwitch />
         </div>
-    </nav>
+  </nav>
+  </>
   )
 }

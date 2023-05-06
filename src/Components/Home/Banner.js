@@ -9,7 +9,7 @@ const slides = [
         text: 'Get all the latest updates on the crypto market'
     },
     {
-        image: 'https://pixelplex.io/wp-content/uploads/2019/07/work-cryptocurrency-mobile-wallet-for-android-and-ios-1920.jpg',
+        image: 'https://www.exodus.com/download/img/mobile.png',
         text: 'On the go. Use the app on portable devices'
     },
     {
@@ -50,7 +50,7 @@ export default function Banner() {
                 <p>Cryptocurrencies</p>
             </li>
         </ul>
-    </div>
+        </div>
     </div>
   )
 }
